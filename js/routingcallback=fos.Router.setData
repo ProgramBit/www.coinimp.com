@@ -1,0 +1,256 @@
+/**/
+fos.Router.setData({
+    "base_url": "",
+    "routes": {
+        "documentation": {
+            "tokens": [["variable", "\/", "reference|http-api|possible-errors", "section"], ["text", "\/documentation"]],
+            "defaults": [],
+            "requirements": {
+                "section": "reference|http-api|possible-errors"
+            },
+            "hosttokens": [],
+            "methods": [],
+            "schemes": []
+        },
+        "site_add": {
+            "tokens": [["text", "\/add-site\/"], ["variable", "\/", "xmr|web", "crypto"], ["text", "\/dashboard"]],
+            "defaults": {
+                "crypto": "web"
+            },
+            "requirements": {
+                "crypto": "xmr|web"
+            },
+            "hosttokens": [],
+            "methods": [],
+            "schemes": []
+        },
+        "site_delete": {
+            "tokens": [["variable", "\/", "[^\/]++", "siteWords"], ["text", "\/dashboard\/delete-site"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": [],
+            "schemes": []
+        },
+        "user_check_password": {
+            "tokens": [["text", "\/profile\/check-user-password"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": ["PATCH"],
+            "schemes": []
+        },
+        "user_change_password": {
+            "tokens": [["text", "\/profile\/update-password"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": ["PATCH"],
+            "schemes": []
+        },
+        "site_edit": {
+            "tokens": [["variable", "\/", "[^\/]++", "siteWords"], ["text", "\/dashboard\/edit-site"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": [],
+            "schemes": []
+        },
+        "api_profile_get_stats": {
+            "tokens": [["variable", "\/", "xmr|web", "crypto"], ["text", "\/api\/profile\/get-stats"]],
+            "defaults": {
+                "crypto": "web"
+            },
+            "requirements": {
+                "crypto": "xmr|web"
+            },
+            "hosttokens": [],
+            "methods": [],
+            "schemes": []
+        },
+        "api_profile_get_sites-users": {
+            "tokens": [["variable", "\/", "xmr|web", "crypto"], ["text", "\/api\/profile\/get-sites-users"]],
+            "defaults": {
+                "crypto": "xmr"
+            },
+            "requirements": {
+                "crypto": "xmr|web"
+            },
+            "hosttokens": [],
+            "methods": [],
+            "schemes": []
+        },
+        "api_get_pool_stats": {
+            "tokens": [["variable", "\/", "xmr|web", "crypto"], ["text", "\/api\/get-pool-stats"]],
+            "defaults": {
+                "crypto": "web"
+            },
+            "requirements": {
+                "crypto": "xmr|web"
+            },
+            "hosttokens": [],
+            "methods": [],
+            "schemes": []
+        },
+        "api_get_session_status": {
+            "tokens": [["text", "\/api\/get-session-status"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": [],
+            "schemes": []
+        },
+        "api_get_api_keys": {
+            "tokens": [["text", "\/api\/get-api-keys"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": [],
+            "schemes": []
+        },
+        "api_get_pending_reward": {
+            "tokens": [["variable", "\/", "xmr|web", "crypto"], ["text", "\/api\/get-pending-reward"]],
+            "defaults": {
+                "crypto": "web"
+            },
+            "requirements": {
+                "crypto": "xmr|web"
+            },
+            "hosttokens": [],
+            "methods": [],
+            "schemes": []
+        },
+        "api_get_usd_rate": {
+            "tokens": [["variable", "\/", "[^\/]++", "currency"], ["text", "\/api\/get_usd_rate"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": [],
+            "schemes": []
+        },
+        "api_get_registered_users_count": {
+            "tokens": [["text", "\/api\/get-registered-users-count"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": [],
+            "schemes": []
+        },
+        "api_token": {
+            "tokens": [["text", "\/api\/token"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": [],
+            "schemes": []
+        },
+        "api_get_total_coins": {
+            "tokens": [["text", "\/api\/api-get-total-coins"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": [],
+            "schemes": []
+        },
+        "fos_user_registration_register": {
+            "tokens": [["text", "\/register\/"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": ["GET", "POST"],
+            "schemes": ["https"]
+        },
+        "fos_user_registration_check_email": {
+            "tokens": [["text", "\/register\/check-email"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": ["GET"],
+            "schemes": ["https"]
+        },
+        "fos_user_registration_confirm": {
+            "tokens": [["variable", "\/", "[^\/]++", "token"], ["text", "\/register\/confirm"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": ["GET"],
+            "schemes": ["https"]
+        },
+        "fos_user_registration_confirmed": {
+            "tokens": [["text", "\/register\/confirmed"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": ["GET"],
+            "schemes": ["https"]
+        },
+        "fos_user_security_login": {
+            "tokens": [["text", "\/login"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": ["GET", "POST"],
+            "schemes": []
+        },
+        "fos_user_security_check": {
+            "tokens": [["text", "\/login_check"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": ["POST"],
+            "schemes": []
+        },
+        "fos_user_security_logout": {
+            "tokens": [["text", "\/logout"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": ["GET", "POST"],
+            "schemes": []
+        },
+        "fos_user_resetting_request": {
+            "tokens": [["text", "\/resetting\/request"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": ["GET"],
+            "schemes": []
+        },
+        "fos_user_resetting_send_email": {
+            "tokens": [["text", "\/resetting\/send-email"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": ["POST"],
+            "schemes": []
+        },
+        "fos_user_resetting_check_email": {
+            "tokens": [["text", "\/resetting\/check-email"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": ["GET"],
+            "schemes": []
+        },
+        "fos_user_resetting_reset": {
+            "tokens": [["variable", "\/", "[^\/]++", "token"], ["text", "\/resetting\/reset"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": ["GET", "POST"],
+            "schemes": []
+        },
+        "wp_downloadplugin": {
+            "tokens": [["text", "\/downloadwpplugin"]],
+            "defaults": [],
+            "requirements": [],
+            "hosttokens": [],
+            "methods": [],
+            "schemes": []
+        }
+    },
+    "prefix": "",
+    "host": "www.coinimp.com",
+    "port": "",
+    "scheme": "https"
+});

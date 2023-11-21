@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <meta name="application-name" content="CoinIMP Web Miner – Monero JavaScript Mining">
+        <meta name="description" content="CoinIMP is the new effective free JavaScript miner that you can embed in your website. This is the only web browser Javascript mining solution on the market with 0% fee. Web Mining in browser - Browser Mining - can be very effective way to earn on your website and can be additional source of income compared to ads. Works also on mobile devices!">
+	<meta name="format-detection" content="telephone=no">
+        <title>CoinIMP 0% fee JavaScript Mining, Browser Mining, Browser Miner</title>
+
+        <!-- Google Analytics -->
+        <script nonce="7vXaKlgQQTJ6tIkNVzIPrA==">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-2289508-13', 'auto');
+        ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
+
+                    <link rel="stylesheet" href="/build/main.bf190b6b.css">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oxygen:400,700|Oswald:400,600,700" rel="stylesheet">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="shortcut icon" type="image/png" sizes="32x32" href="/site-icon-32.png">
+        <link rel="shortcut icon" type="image/png" sizes="16x16" href="/site-icon-16.png">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#448aff">
+        <meta name="apple-mobile-web-app-title" content="CoinIMP – Monero JavaScript Mining">
+        <meta name="msapplication-TileColor" content="#448aff">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+        <meta name="theme-color" content="#448aff">
+
+                <meta property="og:image" content="/build/images/opengraph-preview.c05e81cc.png" />
+        <script nonce="7vXaKlgQQTJ6tIkNVzIPrA==" type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@graph": [
+    {
+        "@type": "WebSite",
+        "name": "CoinIMP JavaScript mining",
+        "url": "https://www.coinimp.com/",
+        "about": "CoinIMP is the new effective JavaScript miner that can be easily embedded in your website. It's an excellent alternative to annoying ads. This way users will pay you with their CPU power for accessing your content.",
+        "copyrightYear": "2018",
+        "keywords": "coinimp,Javascript mining, browser mining,web miner, monero"
+    },
+    {
+        "@type": "product",
+        "brand": "CoinIMP",
+        "name": "CoinIMP JavaScript mining",
+        "logo": {
+                "@type": "ImageObject",
+                "caption": "CoinIMPLogo",
+                "contentUrl": "https://www.coinimp.com//img/main-logo.png",
+                "description": "CoinIMP JavaScript miner",
+                "name": "CoinIMPLogo",
+                "keywords": "coinimp,javascript mining,browser mining,web miner,monero"
+        },
+        "image": {
+            "@type": "ImageObject",
+            "caption": "CoinIMP",
+            "contentUrl": "https://www.coinimp.com//img/main-mascot.png",
+            "description": "CoinIMP  JavaScript miner",
+            "name": "CoinIMP",
+            "keywords": "coinimp,javascript mining,browser mining,web miner,monero"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "description": "When you refer someone YOU WILL GET 1% of all his earnings",
+            "mainEntityOfPage": "https://www.coinimp.com/referral",
+            "image": {
+                    "@type": "ImageObject",
+                    "caption": "CoinIMP referral",
+                    "contentUrl": "https://www.coinimp.com//img/imp-calculator.png",
+                    "description": "CoinIMP  referral program ",
+                    "name": "CoinIMPReferral",
+                    "keywords": "coinimp,javascript mining,browser mining,web miner,monero"
+            },
+            "name": "referralProgram"
+        },
+        "description": "CoinIMP is the new effective JavaScript miner that can be easily embedded in your website",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "reviewCount": "7",
+            "ratingValue": "5",
+            "author": "https://alternativeto.net/software/coinimp/reviews/",
+            "name": "CoinIMPRating"
+        }
+    },
+    {
+        "@type": "WebApplication",
+        "name": "CoinIMP JavaScript mining",
+        "applicationCategory": "cryptocurrency",
+        "operatingSystem": "all",
+        "description": "CoinIMP is the new effective JavaScript miner that can be easily embedded in your website",
+        "downloadUrl": "https://www.coinimp.com//register",
+        "featureList": "https://www.coinimp.com/",
+        "installUrl": "https://www.coinimp.com/dashboard",
+        "releaseNotes": "https://www.coinimp.com/",
+        "screenshot": "https://www.coinimp.com/documentation",
+        "keywords": "coinimp,javascript mining,browser mining,web miner,monero",
+        "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "description": "When you refer someone YOU WILL GET 1% of all his earnings",
+            "mainEntityOfPage": "https://www.coinimp.com/referral",
+            "image": {
+                "@type": "ImageObject",
+                "caption": "CoinIMP referral",
+                "contentUrl": "https://www.coinimp.com//img/imp-calculator.png",
+                "description": "coinImp  referral program ",
+                "name": "CoinIMPReferral",
+                "keywords": "coinimp,javascript mining,browser mining,web miner,monero"
+            },
+            "name": "referralProgram"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "reviewCount": "7",
+            "ratingValue": "5",
+            "author": "https://alternativeto.net/software/coinimp/reviews/",
+            "name": "CoinIMPRating"
+        },
+        "image": [ {
+            "@type": "ImageObject",
+            "caption": "CoinIMP",
+            "contentUrl": "https://www.coinimp.com//img/main-logo.png",
+            "description": "CoinIMP JavaScript miner Logo",
+            "name": "CoinIMPLogo",
+            "keywords": "coinimp,javascript mining,browser mining,web miner,monero"
+        } ,
+        {
+            "@type": "ImageObject",
+            "caption": "CoinIMP",
+            "contentUrl": "https://www.coinimp.com//img/main-mascot.png",
+            "description": "CoinIMP JavaScript miner",
+            "name": "CoinIMP",
+            "keywords": "coinimp,javascript mining,browser mining,web miner,monero"
+        }],
+        "softwareHelp": {
+            "@type": "HowTo",
+            "description": "CoinIMP is the new effective JavaScript miner that can be easily embedded in your website. It's an excellent alternative to annoying ads. This way users will pay you with their CPU power for accessing your content.",
+            "mainEntityOfPage": "https://www.coinimp.com/documentation/reference",
+            "name": "CoinIMPHelp",
+            "keywords": "coinimp,javascript mining,browser mining,web miner,monero",
+            "url": "https://www.coinimp.com/documentation"
+        },
+        "softwareRequirements": "https://www.coinimp.com/documentation",
+        "about": "CoinIMP is the new effective JavaScript miner that can be easily embedded in your website. It's an excellent alternative to annoying ads. This way users will pay you with their CPU power for accessing your content."
+    }
+    ]
+}
+</script>
+
+    </head>
+    <body class="">
+
+        
+                                    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3" id="navbar">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="/">
+                            <img
+                                src="/build/images/main-logo.ad63ea88.png"
+                                height="40" alt="CoinIMP javascript mining logo"
+                            >
+                        </a>
+                        <button
+                            @click="toggleNavbarMenu"
+                            class="navbar-toggler"
+                            :class="{ 'collapsed': !showNavbarMenu }"
+                            type="button"
+                            :aria-expanded="showNavbarMenu"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" :class="{ 'show': showNavbarMenu }">
+                            <ul class="navbar-nav ml-auto">
+                                                                <li class="nav-item ">
+                                    <a href="/about" class="nav-link">About Us</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="/documentation" class="nav-link">Documentation</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="/faq" class="nav-link">FAQ</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="/referral" class="nav-link">Referral Program</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="/news/archive" class="nav-link">News</a>
+                                </li>
+                                                                                                        <li class="nav-item ">
+                                        <a href="/dashboard" class="nav-link">Dashboard</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a href="/wallet" class="nav-link">Wallet</a>
+                                    </li>
+                                    <li class="nav-item d-lg-none">
+                                        <a href="/profile" class="nav-link">Profile</a>
+                                    </li>
+                                    <li class="nav-item d-lg-none">
+                                        <a href="/logout" class="nav-link">Log Out</a>
+                                    </li>
+                                    <li class="nav-item d-none d-lg-block">
+                                        <div id="nav-profile" class="dropdown" :class="{ 'show': showProfileMenu }">
+                                            <button
+                                                class="btn btn-secondary dropdown-toggle ml-2"
+                                                type="button" aria-haspopup="true"
+                                                :aria-expanded="showProfileMenu"
+                                                @click="toggleProfileMenu"
+                                                v-click-outside="hideProfileMenu">
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right border-0 mt-2" :class="{ 'show': showProfileMenu }">
+                                                <a class="dropdown-item mx-1 my-1 pl-3" href="/profile">
+                                                    <span class="icon-profile float-left mt-1 mr-1"></span>
+                                                    Profile
+                                                </a>
+                                                <a class="dropdown-item mx-1 mb-1 pl-3 pr-5" href="/logout">
+                                                    <span class="icon-logout float-left mt-1 mr-1"></span>
+                                                    Log Out
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            
+            <div class="container-fluid p-0" id="content-wrapper">
+                <div id="content-container" class="landing-page">
+                    
+                        <section id="main-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-md-10 text-center">
+                    <h1 class="main-header" data-aos="fade-up"><span>Free</span> JavaScript Mining - Browser Mining</h1>
+                    <h2 class="main-header" data-aos="fade-up" data-aos-delay="300">Use our JavaScript Web Miner and <span>earn money</span> with your page traffic!</h2>
+                </div>
+		<br />
+                <div class="col-12 text-center mt-4">
+                    <a href="/register/" class="btn btn-primary" data-aos="fade-up" data-aos-delay="1000" data-aos-anchor="#main-section">Start mining now!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="landing">
+        <section id="website_information-section">
+
+            <div class="container">
+
+                <div class="website_information-inside row d-block d-sm-block d-md-flex justify-content-between px-md-2 px-sm-0" data-aos="fade-up">
+
+                    <div class="info-blocks d-flex justify-content-center">
+                        <span class="icon icon-users"> </span>
+                        <span class="website_information-block pt-1_3">
+                            <span v-cloak>
+                                <span class="font-weight-bold">160 414</span>
+                            </span>
+                            Registered Users
+                        </span>
+                        <input type="hidden" id="users-count-refresh-rate" value="3600">
+                    </div>
+
+                    <div class="info-blocks d-flex justify-content-center">
+                        <span class="icon icon-paid"> </span>
+                        <span class="website_information-block">
+                            <span v-cloak>
+                                <span class="font-weight-bold">1 969</span> XMR &
+                                <span class="font-weight-bold">52 554 988</span> MINTME paid,<br>
+                                worth <span class="font-weight-bold">671 936</span> USD
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="info-blocks d-flex justify-content-center">
+                        <span class="icon icon-views"> </span>
+                        <span class="website_information-block">
+                            <span v-cloak>
+                                <span>Our script is embedded on websites<br>
+                                    with <span class="font-weight-bold">1 409 718 200</span>
+                                    views per month
+                                    </span>
+                            </span>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="definition-section">
+        <div class="container">
+            <div class="row" id="coinimp-def">
+                <div class="col-12 text-center">
+                    <h2 data-aos="fade-down">What is Coin<span class="imp-color">IMP</span>?</h2>
+                </div>
+                <div class="col-xs-12 col-lg-8 align-self-end" data-aos="fade-right">
+                    <p>Coin<span class="imp-color">IMP</span> is the new effective JavaScript miner that can be easily embedded in your website. This way users will pay you with their CPU power for accessing your content.</p>
+                    <p>With Coin<span class="imp-color">IMP</span>, MintMe.com Coin is mined by using your visitors CPU resources which otherwise would be wasted. Why not Bitcoin, Ethereum, Monero or any other? Because MintMe.com Coin can be mined with similar efficiency directly and via websites thanks to innovative mining algorithm. Monero used to be profitable too, but since 2019 algorithm update, javascript mining Monero (XMR) is no longer profitable. On top of that, MintMe.com Coin allows you to create your own coin for free and it's value is expected to grow.</p>
+                    <p>Our JavaScript miner has more advantages than other JavaScript mining solutions. Coin<span class="imp-color">IMP</span> web miner isn't blocked by Anti-Viruses or AdBlockers and if it eventually gets blocked, we react and work hard to unblock it. We think responsible web browser mining will be part of the future ad market.</p>
+                </div>
+                <div class="col-xs-12 col-lg-4" data-aos="zoom-in">
+                    <img src="/build/images/main-mascot.92421427.png" class="imp-img img-fluid mx-auto d-block" alt="coinimp javascript mintme miner">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="properties-section" class="pt-4 pb-5">
+        <div class="container">
+                <div class="col-12 text-center">
+                    <h2 data-aos="fade-down">Objective comparison of Monero and MintMe.com Coin</h2>
+                </div>
+ <div class="row mt-4">
+   <div class="col-6 rightcol">
+            <div class="row" data-aos="fade-down">
+                <div class="col-12 text-center">
+                    <div class="homeicon mt-4 mb-5">
+                        <img src="/build/images/monero-logo.7ff72964.png" alt="MONERO">
+                    </div>
+                </div>
+            </div>
+  </div>
+  <div class="col-6 leftcol">
+            <div class="row" data-aos="fade-down">
+                <div class="col-12 text-center">
+
+                    <a href="https://mintme.com/coin/" target="_blank">
+                        <div class="homeicon mt-4 mb-5">
+                            <img src="/build/images/mintmecoin-logo.ff5e3fe4.svg" alt="MintMe.com Coin">
+                        </div>
+                    </a>
+                </div>
+            </div>
+   </div>
+ </div>
+  <div class="row">
+  <div class="col-6 rightcol">
+            <div class="row" data-aos="fade-down">
+                <div class="col-12 text-center">
+                    <div class="homeicon">
+                        <img src="/build/images/full-anonymity.33f7f3a6.png" alt="Full anonymity">
+                    </div>
+                    <h2 class="title mb-0">Full anonymity</h2>
+                    <p>Your wallet address never appears on the public blockchain and nobody knows how many coins you have. In a world where big corporations trade, your privacy is an important factor.</p>
+                </div>
+            </div>
+  </div>
+  <div class="col-6 leftcol">
+            <div class="row" data-aos="fade-down">
+                <div class="col-12 text-center">
+                    <div class="homeicon">
+                        <img src="/build/images/transparent.6d14a828.png" alt="Transparent">
+                    </div>
+                    <h2 class="title mb-0">Transparent</h2>
+                    <p>MintMe.com Coin project wants to make web mining more secure and transparent for everyone. Thanks to its open transactions, it will never be a friendly place for botnet or hacker activities.</p>
+                </div>
+            </div>
+   </div>
+ </div>
+  <div class="row">
+  <div class="col-6 rightcol">
+            <div class="row" data-aos="fade-down">
+                <div class="col-12 text-center">
+                    <div class="homeicon">
+                        <img src="/build/images/tradable.c47acfe6.png" alt="Tradable">
+                    </div>
+                    <h2 class="title mb-0">Tradable</h2>
+                    <p>Monero is traded on many exchanges. Change it easily for BTC or USD to afford mining costs.</p>
+                </div>
+            </div>
+  </div>
+  <div class="col-6 leftcol">
+            <div class="row" data-aos="fade-down">
+                <div class="col-12 text-center">
+                    <div class="homeicon">
+                        <img src="/build/images/new-coin.fac8a470.png" alt="New coin">
+                    </div>
+                    <h2 class="title mb-0">New coin</h2>
+                    <p>MintMe.com Coin is a new coin and is traded only on few exchanges, we advise you to mine it and HODL it.</p>
+                </div>
+            </div>
+   </div>
+ </div>
+  <div class="row">
+  <div class="col-6 rightcol">
+            <div class="row" data-aos="fade-down">
+                <div class="col-12 text-center">
+                    <div class="homeicon">
+                        <img src="/build/images/limitless.0e04721b.png" alt="Limitless">
+                    </div>
+                    <h2 class="title mb-0">Limitless</h2>
+                    <p>Monero is virtually infinite. Miners can always get at least 0.3 XMR per block so there won't be a shortage of rewards.</p>
+                </div>
+            </div>
+  </div>
+  <div class="col-6 leftcol">
+            <div class="row" data-aos="fade-down">
+                <div class="col-12 text-center">
+                    <div class="homeicon">
+                        <img src="/build/images/limited-supply.f62cf60d.png" alt="Limited supply">
+                    </div>
+                    <h2 class="title mb-0">Limited supply</h2>
+                    <p>MintMe.com Coin has a limited supply of coins. That means its value will increase over time.</p>
+                </div>
+            </div>
+   </div>
+ </div>
+   <div class="row">
+  <div class="col-6 rightcol">
+            <div class="row" data-aos="fade-down">
+                <div class="col-12 text-center">
+                    <div class="homeicon">
+                        <img src="/build/images/speed.e6c81565.png" alt="Average speed transactions">
+                    </div>
+                    <h2 class="title mb-0">Average speed transactions</h2>
+                    <p>Compared to Bitcoin's 10 min, Monero's 2 min transactions are quite fast and enough for the most typical usage.</p>
+                </div>
+            </div>
+  </div>
+  <div class="col-6 leftcol">
+            <div class="row" data-aos="fade-down">
+                <div class="col-12 text-center">
+                    <div class="homeicon">
+                        <img src="/build/images/super-fast.de7803ba.png" alt="Super fast transactions">
+                    </div>
+                    <h2 class="title mb-0">Super fast transactions</h2>
+                    <p>MintMe.com Coin's ~10 sec block time is among the fastest. This creates an opportunity for additional uses, for example direct payments.</p>
+                </div>
+            </div>
+   </div>
+ </div>
+    <div class="row">
+  <div class="col-6 rightcol">
+            <div class="row" data-aos="fade-down">
+                <div class="col-12 text-center">
+                    <div class="homeicon">
+                        <img src="/build/images/no-smart-contracts.45527843.png" alt="No smart contracts">
+                    </div>
+                    <h2 class="title mb-0">No smart contracts</h2>
+                    <p>While it has no smart contracts functionality, it doesn’t actually need one. Its purpose of a fully anonymous, private and safe cryptocurrency is more than enough.</p>
+                </div>
+            </div>
+  </div>
+  <div class="col-6 leftcol">
+            <div class="row" data-aos="fade-down">
+                <div class="col-12 text-center">
+                    <div class="homeicon">
+                        <img src="/build/images/smart-contracts.da919f8e.png" alt="Smart contracts and DApps">
+                    </div>
+                    <h2 class="title mb-0">Smart contracts and DApps</h2>
+                    <p>MintMe.com Coin is ready to be the base for other projects. It is ERC20 and ERC223 compliant and supports smart contracts, which is the future of cryptocurrencies.</p>
+                </div>
+            </div>
+   </div>
+ </div>
+             <div class="row firstrow" data-aos="fade-down">
+                <div class="col-12 text-center">
+                    <div class="homeicon">
+                        <img src="/build/images/open-source.599335f8.png" alt="Open source">
+                    </div>
+                    <h2 class="title mb-0">Open source</h2>
+                    <p>Both projects are open source, it’s easy for any programmer to see what is going on inside the code.</p>
+                </div>
+            </div>
+             <div class="row" data-aos="fade-down">
+                <div class="col-12 text-center">
+                    <div class="homeicon">
+                        <img src="/build/images/cpu-minable.7e400309.png" alt="CPU minable">
+                    </div>
+                    <h2 class="title mb-0">CPU minable</h2>
+                    <p>Monero and MintMe.com Coin use different versions of CryptoNight, but they both share the same quality - GPU mining is not much more profitable than CPU mining on any of them. This makes JavaScript mining profitable.</p>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-down">
+                <div class="col-12 text-center">
+                    <div class="homeicon">
+                        <img src="/build/images/asic-resistance.c1c5d95d.png" alt="ASIC resistance">
+                    </div>
+                    <h2 class="title mb-0">ASIC resistance</h2>
+                    <p>Both projects announced they would fight any ASIC mining in their networks by continuously tweaking hashing algorithms to make ASIC production unprofitable.</p>
+                </div>
+            </div>
+    </div>
+
+</section>
+    <section id="mintme">
+        <div class="container pb-2">
+            <div class="row" data-aos="fade-down">
+                <div class="col-12 pb-3 text-center">
+                    <h2 data-aos="fade-down">Learn what is MintMe.com and
+                        <a target="_blank" href="https://www.mintme.com/">create your coin</a>
+                    </h2>
+                </div>
+                <div class="col-10 mx-auto text-center position-relative">
+                    <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/kFGCW1_63lA"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="recent-payment-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12 mb-2">
+                    <h2>Our Recent Payments</h2>
+                </div>
+                <div class="col-md-12 table-responsive-xl">
+                    <table class="table table-nowrap">
+                        <thead class="thead-dark font-weight-bold">
+                        <tr>
+                            <th>Time Sent</th>
+                            <th>Transaction Hash</th>
+                            <th>Amount</th>
+                            <th>Currency</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                                                    <tr>
+                                <td>2 hours ago</td>
+                                <td>
+                                                                        <a href="https://www.mintme.com/explorer/tx/0xe3a3b259848269f4bdee41e9d9ab725941f21c32f740c0e0bab3b5a28c22d645" rel="nofollow" target="_blank">
+                                        0xe3a3b259848269f4bdee41e9d9ab725941f21c32f740c0e0bab3b5a28c22d645
+                                    </a>
+                                                                    </td>
+                                <td>0.04984652</td>
+                                <td>MINTME</td>
+                            </tr>
+                                                    <tr>
+                                <td>2 hours ago</td>
+                                <td>
+                                                                        <a href="https://www.mintme.com/explorer/tx/0xd9a0ceaff8c4dac51c176bc622d25f47602f0da7fd8a1d3edbe473d06ca7a9d7" rel="nofollow" target="_blank">
+                                        0xd9a0ceaff8c4dac51c176bc622d25f47602f0da7fd8a1d3edbe473d06ca7a9d7
+                                    </a>
+                                                                    </td>
+                                <td>8.37269197</td>
+                                <td>MINTME</td>
+                            </tr>
+                                                    <tr>
+                                <td>9 hours ago</td>
+                                <td>
+                                                                        <a href="https://www.mintme.com/explorer/tx/0x7b5587f91413b648c4aaaec67d5bdc397007286dcd8f6a9524bcc7decb9e562d" rel="nofollow" target="_blank">
+                                        0x7b5587f91413b648c4aaaec67d5bdc397007286dcd8f6a9524bcc7decb9e562d
+                                    </a>
+                                                                    </td>
+                                <td>1.01735586</td>
+                                <td>MINTME</td>
+                            </tr>
+                                                    <tr>
+                                <td>10 hours ago</td>
+                                <td>
+                                                                        <a href="https://www.mintme.com/explorer/tx/0x0cbae624b2a3ee9743ded60c6ff672c73d18620d2f1dbcb734e2987956698b16" rel="nofollow" target="_blank">
+                                        0x0cbae624b2a3ee9743ded60c6ff672c73d18620d2f1dbcb734e2987956698b16
+                                    </a>
+                                                                    </td>
+                                <td>0.07153845</td>
+                                <td>MINTME</td>
+                            </tr>
+                                                    <tr>
+                                <td>15 hours ago</td>
+                                <td>
+                                                                        <a href="https://www.mintme.com/explorer/tx/0xa0a6edeb22e8617f3d706eb2ee81a818daca92484655005abc9e204a30db9909" rel="nofollow" target="_blank">
+                                        0xa0a6edeb22e8617f3d706eb2ee81a818daca92484655005abc9e204a30db9909
+                                    </a>
+                                                                    </td>
+                                <td>2002.00000000</td>
+                                <td>MINTME</td>
+                            </tr>
+                                                    <tr>
+                                <td>16 hours ago</td>
+                                <td>
+                                                                        <a href="https://www.mintme.com/explorer/tx/0x9df58e817cd77742e4d0d8b25949ac4b49f2817b27fd33547abb821dcb9f0aa8" rel="nofollow" target="_blank">
+                                        0x9df58e817cd77742e4d0d8b25949ac4b49f2817b27fd33547abb821dcb9f0aa8
+                                    </a>
+                                                                    </td>
+                                <td>0.70055368</td>
+                                <td>MINTME</td>
+                            </tr>
+                                                    <tr>
+                                <td>16 hours ago</td>
+                                <td>
+                                                                        <a href="https://www.mintme.com/explorer/tx/0x98790feaa5740f45b390a66c02ab607b6901daaa5144bc0b623311db9bc959af" rel="nofollow" target="_blank">
+                                        0x98790feaa5740f45b390a66c02ab607b6901daaa5144bc0b623311db9bc959af
+                                    </a>
+                                                                    </td>
+                                <td>926.20839302</td>
+                                <td>MINTME</td>
+                            </tr>
+                                                    <tr>
+                                <td>19 hours ago</td>
+                                <td>
+                                                                        <a href="https://www.mintme.com/explorer/tx/0xb34822ce812edc17d2d99a733d1884c458d16218c16675031a6a78f10620c5ca" rel="nofollow" target="_blank">
+                                        0xb34822ce812edc17d2d99a733d1884c458d16218c16675031a6a78f10620c5ca
+                                    </a>
+                                                                    </td>
+                                <td>5.00000000</td>
+                                <td>MINTME</td>
+                            </tr>
+                                                    <tr>
+                                <td>21 hours ago</td>
+                                <td>
+                                                                        <a href="https://www.mintme.com/explorer/tx/0xe41ebad538f4d79129eea4aeb7de49ec161f93abf360711301d5b3742ed8506d" rel="nofollow" target="_blank">
+                                        0xe41ebad538f4d79129eea4aeb7de49ec161f93abf360711301d5b3742ed8506d
+                                    </a>
+                                                                    </td>
+                                <td>20.75164677</td>
+                                <td>MINTME</td>
+                            </tr>
+                                                    <tr>
+                                <td>21 hours ago</td>
+                                <td>
+                                                                        <a href="https://www.mintme.com/explorer/tx/0xcbec9b7517b372c472a0fd60a9d983da946b187788edc54e0a81f94db37b95ac" rel="nofollow" target="_blank">
+                                        0xcbec9b7517b372c472a0fd60a9d983da946b187788edc54e0a81f94db37b95ac
+                                    </a>
+                                                                    </td>
+                                <td>2.73764214</td>
+                                <td>MINTME</td>
+                            </tr>
+                                                </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="howto-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-md-9 text-center">
+                    <h2 data-aos="fade-up">How to start JavaScript mining?</h2>
+                </div>
+                <div class="col-xs-12 col-md-10 mt-4 text-center">
+                    <p data-aos="fade-up">It's very easy... Create a Coin<span class="imp-color">IMP</span> account and add the Coin<span class="imp-color">IMP</span> code to your website. It's free and you can find it in our Dashboard. That's it! &mdash; Just relax and enjoy your earnings...</p>
+                </div>
+                <div class="col-12 text-center mt-4">
+                    <a href="/register/" class="btn btn-primary" data-aos="fade-up">Start mining now!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+                </div>
+            </div>
+
+            <div class="container-fluid p-0">
+                                    <div id="page-footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <p class="d-flex align-items-center justify-content-center">
+                                        <a href="https://www.twitter.com/coinimp" class="mr-3" rel="nofollow" target="_blank">
+                                            <font-awesome-layers class="fa-2x">
+                                                <font-awesome-icon :icon="['fab','twitter-square']"></font-awesome-icon>
+                                            </font-awesome-layers>
+                                        </a>
+                                        <a href="https://www.reddit.com/r/coinimp" class="mr-3" rel="nofollow" target="_blank">
+                                            <font-awesome-layers class="fa-2x">
+                                                <font-awesome-icon :icon="['fab','reddit-square']"></font-awesome-icon>
+                                            </font-awesome-layers>
+                                        </a>
+                                        <a href="https://www.facebook.com/coinimp/" class="mr-3" rel="nofollow" target="_blank">
+                                            <font-awesome-layers class="fa-2x">
+                                                <font-awesome-icon :icon="['fab','facebook-square']"></font-awesome-icon>
+                                            </font-awesome-layers>
+                                        </a>
+                                        <a href="/contact" class="mr-3">
+                                            <font-awesome-layers class="fa-1x">
+                                                <font-awesome-icon icon="envelope"></font-awesome-icon>
+                                            </font-awesome-layers>
+                                            Contact Us
+                                        </a>
+                                        <a href="/faq" class="mr-3">
+                                            <font-awesome-layers class="fa-1x">
+                                                <font-awesome-icon :icon="['far', 'question-circle']"></font-awesome-icon>
+                                            </font-awesome-layers>
+                                            FAQ
+                                        </a>
+                                    </p>
+                                    <p class="d-flex align-items-center justify-content-center">
+                                        <a href="/terms-and-conditions" class="mr-3">
+                                            Terms &amp; Conditions
+                                        </a>
+                                        <a href="/privacy-policy" class="mr-3">
+                                            Privacy Policy
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <p class="justify-content-center">v1.3.9 | Copyright 2017-2023 Coin<span class="imp-color">IMP</span>.com, All Rights Reserved</p>
+                                    <p class="justify-content-center">
+                                        <a href="https://www.mintme.com/">mintMe - monetize yourself</a> |
+                                        <font-awesome-icon icon="cookie-bite"></font-awesome-icon> This website uses cookies
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+                            <script nonce="7vXaKlgQQTJ6tIkNVzIPrA==" src="/build/main.a4fcc4ad.js"></script>
+                <script nonce="7vXaKlgQQTJ6tIkNVzIPrA==" src="/bundles/fosjsrouting/js/router.js"></script>
+    <script nonce="7vXaKlgQQTJ6tIkNVzIPrA==" src="/js/routingcallback=fos.Router.setData"></script>
+    <script nonce="7vXaKlgQQTJ6tIkNVzIPrA==" src="/build/index.9eaea1d6.js"></script>
+            <!--Start of Tawk.to Script-->
+            <script nonce="7vXaKlgQQTJ6tIkNVzIPrA==" type="text/javascript">
+                var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+                (function(){
+                    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                    s1.async=true;
+                    s1.src='https://embed.tawk.to/5a280eeb5d3202175d9b6b51/default';
+                    s1.charset='UTF-8';
+                    s1.setAttribute('crossorigin','*');
+                    s0.parentNode.insertBefore(s1,s0);
+                })();
+            </script>
+            <!--End of Tawk.to Script-->
+            </body>
+</html>
